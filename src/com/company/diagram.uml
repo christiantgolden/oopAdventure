@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1874.364583333333" y="377.0">com.company.factories.ItemFactory</node>
+    <node x="2455.2331202233977" y="238.0">com.company.interfaces.iLevel</node>
+    <node x="1494.5104497354496" y="238.0">com.company.items.Armor</node>
+    <node x="1893.364583333333" y="743.0">com.company.Main</node>
+    <node x="0.0" y="817.0">com.company.interfaces.iQuest</node>
+    <node x="1733.3581202233977" y="476.0">com.company.characters.Berserker</node>
+    <node x="1942.6289866255142" y="0.0">com.company.interfaces.iItem</node>
+    <node x="1952.114583333333" y="238.0">com.company.items.Food</node>
+    <node x="715.5104497354495" y="238.0">com.company.quests.deliverMessage</node>
+    <node x="2248.233120223398" y="238.0">com.company.items.Book</node>
+    <node x="2532.8685699588473" y="476.0">com.company.levels.Water</node>
+    <node x="234.76044973544958" y="377.0">com.company.Spell</node>
+    <node x="900.8685699588474" y="565.0">com.company.characters.Wizard</node>
+    <node x="762.8685699588474" y="565.0">com.company.characters.Dragonborn</node>
+    <node x="1364.6875" y="664.0">com.company.factories.CharacterFactory</node>
+    <node x="459.5104497354496" y="238.0">com.company.attacks.HammerStrike</node>
+    <node x="1946.1289866255142" y="79.0">com.company.Item</node>
+    <node x="307.5104497354496" y="238.0">com.company.attacks.DoubleStrike</node>
+    <node x="468.0560699588473" y="0.0">com.company.interfaces.iAttack</node>
+    <node x="1179.5104497354496" y="238.0">com.company.quests.killBeast</node>
+    <node x="611.5104497354495" y="238.0">com.company.attacks.Slice</node>
+    <node x="1027.5104497354496" y="238.0">com.company.quests.recoverRelic</node>
+    <node x="1242.7604497354496" y="476.0">com.company.characters.Bard</node>
+    <node x="1835.114583333333" y="238.0">com.company.items.Jewelry</node>
+    <node x="1434.9310699588475" y="377.0">com.company.Character</node>
+    <node x="241.01044973544958" y="79.0">com.company.interfaces.iSpell</node>
+    <node x="2635.8685699588473" y="476.0">com.company.levels.Castle</node>
+    <node x="821.3685699588474" y="476.0">com.company.SpellCaster</node>
+    <node x="2444.816453556731" y="377.0">com.company.Level</node>
+    <node x="0.0" y="476.0">com.company.spells.Lightning</node>
+    <node x="2011.2604497354496" y="476.0">com.company.levels.Sky</node>
+    <node x="131.0" y="476.0">com.company.spells.Ice</node>
+    <node x="499.6810699588473" y="377.0">com.company.factories.AttackFactory</node>
+    <node x="2110.2331202233977" y="238.0">com.company.items.Ingredient</node>
+    <node x="1445.4310699588475" y="476.0">com.company.characters.Priest</node>
+    <node x="1322.5104497354496" y="238.0">com.company.interfaces.iCharacter</node>
+    <node x="2203.2604497354496" y="476.0">com.company.levels.Mountain</node>
+    <node x="1597.5104497354496" y="238.0">com.company.items.Weapon</node>
+    <node x="663.9310699588474" y="79.0">com.company.Attack</node>
+    <node x="2100.2604497354496" y="476.0">com.company.levels.Field</node>
+    <node x="2467.7604497354496" y="565.0">com.company.factories.LevelFactory</node>
+    <node x="247.125" y="476.0">com.company.spells.Fire</node>
+    <node x="1616.3581202233977" y="476.0">com.company.characters.Warrior</node>
+    <node x="2344.2331202233977" y="238.0">com.company.items.Potion</node>
+    <node x="2415.8685699588473" y="476.0">com.company.levels.Dungeon</node>
+    <node x="1152.6810699588473" y="79.0">com.company.Quest</node>
+    <node x="882.5104497354495" y="238.0">com.company.quests.saveHostage</node>
+    <node x="122.0" y="565.0">com.company.factories.SpellFactory</node>
+    <node x="1146.7604497354496" y="476.0">com.company.characters.Monk</node>
+    <node x="950.8634810405645" y="377.0">com.company.factories.QuestFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.Character" target="com.company.items.Armor">
+      <point x="37.0" y="-14.5" />
+      <point x="1527.4310699588475" y="287.0" />
+      <point x="1515.2604497354496" y="287.0" />
+      <point x="-20.75" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.QuestFactory" target="com.company.quests.recoverRelic">
+      <point x="26.399999999999977" y="-14.5" />
+      <point x="1043.2634810405643" y="347.0" />
+      <point x="1093.5104497354496" y="347.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.characters.Bard" target="com.company.Character">
+      <point x="0.0" y="-14.5" />
+      <point x="1280.7604497354496" y="456.0" />
+      <point x="1478.0977366255142" y="456.0" />
+      <point x="-12.333333333333258" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.ItemFactory" target="com.company.items.Ingredient">
+      <point x="23.4375" y="-14.5" />
+      <point x="1960.302083333333" y="337.0" />
+      <point x="2169.2331202233977" y="337.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.LevelFactory" target="com.company.levels.Water">
+      <point x="11.0" y="-14.5" />
+      <point x="2544.7604497354496" y="525.0" />
+      <point x="2574.3685699588473" y="525.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.quests.killBeast" target="com.company.Quest">
+      <point x="0.0" y="-14.5" />
+      <point x="1235.0104497354496" y="218.0" />
+      <point x="1199.3685699588473" y="218.0" />
+      <point x="5.1875" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.SpellFactory" target="com.company.Spell">
+      <point x="16.5" y="-14.5" />
+      <point x="204.5" y="545.0" />
+      <point x="210.5" y="545.0" />
+      <point x="210.5" y="456.0" />
+      <point x="269.34378306878284" y="456.0" />
+      <point x="-6.9166666666667425" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.CharacterFactory" target="com.company.characters.Monk">
+      <point x="-22.85714285714289" y="-14.5" />
+      <point x="1421.8303571428569" y="624.0" />
+      <point x="1184.7604497354496" y="624.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.interfaces.iSpell" target="com.company.interfaces.iAttack">
+      <point x="0.0" y="-14.5" />
+      <point x="286.0104497354496" y="54.0" />
+      <point x="492.3060699588473" y="54.0" />
+      <point x="-24.25" y="14.5" />
+    </edge>
+    <edge source="com.company.Attack" target="com.company.interfaces.iAttack">
+      <point x="0.0" y="-14.5" />
+      <point x="708.9310699588474" y="54.0" />
+      <point x="540.8060699588473" y="54.0" />
+      <point x="24.25" y="14.5" />
+    </edge>
+    <edge source="com.company.spells.Ice" target="com.company.Spell">
+      <point x="0.0" y="-14.5" />
+      <point x="165.5" y="446.0" />
+      <point x="255.51044973544958" y="446.0" />
+      <point x="-20.75" y="14.5" />
+    </edge>
+    <edge source="com.company.attacks.DoubleStrike" target="com.company.Attack">
+      <point x="0.0" y="-14.5" />
+      <point x="373.5104497354496" y="188.0" />
+      <point x="680.8060699588474" y="188.0" />
+      <point x="-28.125" y="14.5" />
+    </edge>
+    <edge source="com.company.attacks.HammerStrike" target="com.company.Attack">
+      <point x="0.0" y="-14.5" />
+      <point x="525.5104497354496" y="198.0" />
+      <point x="692.0560699588474" y="198.0" />
+      <point x="-16.875" y="14.5" />
+    </edge>
+    <edge source="com.company.characters.Monk" target="com.company.Character">
+      <point x="0.0" y="-14.5" />
+      <point x="1184.7604497354496" y="446.0" />
+      <point x="1465.7644032921808" y="446.0" />
+      <point x="-24.666666666666742" y="14.5" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.factories.ItemFactory">
+      <point x="9.5" y="-14.5" />
+      <point x="1940.864583333333" y="723.0" />
+      <point x="1936.864583333333" y="723.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.CharacterFactory" target="com.company.characters.Berserker">
+      <point x="45.71428571428578" y="-14.5" />
+      <point x="1490.4017857142858" y="634.0" />
+      <point x="1788.8581202233977" y="634.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.interfaces.iCharacter" target="com.company.Attack">
+      <point x="-29.5" y="-14.5" />
+      <point x="1352.0104497354496" y="158.0" />
+      <point x="748.3060699588474" y="158.0" />
+      <point x="39.375" y="14.5" />
+    </edge>
+    <edge source="com.company.levels.Dungeon" target="com.company.Level">
+      <point x="0.0" y="-14.5" />
+      <point x="2464.3685699588473" y="456.0" />
+      <point x="2486.316453556731" y="456.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.CharacterFactory" target="com.company.characters.Warrior">
+      <point x="22.85714285714289" y="-14.5" />
+      <point x="1467.5446428571427" y="624.0" />
+      <point x="1664.8581202233977" y="624.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.Character" target="com.company.Attack">
+      <point x="-49.333333333333485" y="-14.5" />
+      <point x="1441.097736625514" y="357.0" />
+      <point x="1301.0104497354496" y="357.0" />
+      <point x="1301.0104497354496" y="178.0" />
+      <point x="725.8060699588474" y="178.0" />
+      <point x="16.875" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.ItemFactory" target="com.company.items.Food">
+      <point x="7.8125" y="-14.5" />
+      <point x="1944.677083333333" y="327.0" />
+      <point x="1990.114583333333" y="327.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.AttackFactory" target="com.company.attacks.Slice">
+      <point x="17.375" y="-14.5" />
+      <point x="586.5560699588473" y="347.0" />
+      <point x="653.0104497354495" y="347.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.Item" target="com.company.interfaces.iItem">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.ItemFactory" target="com.company.items.Jewelry">
+      <point x="-7.8125" y="-14.5" />
+      <point x="1929.052083333333" y="317.0" />
+      <point x="1883.614583333333" y="317.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.Character" target="com.company.items.Weapon">
+      <point x="49.33333333333326" y="-14.5" />
+      <point x="1539.7644032921808" y="357.0" />
+      <point x="1620.0104497354496" y="357.0" />
+      <point x="-22.5" y="14.5" />
+    </edge>
+    <edge source="com.company.items.Ingredient" target="com.company.Item">
+      <point x="0.0" y="-14.5" />
+      <point x="2169.2331202233977" y="208.0" />
+      <point x="1986.8432723398" y="208.0" />
+      <point x="2.7142857142857792" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.QuestFactory" target="com.company.quests.deliverMessage">
+      <point x="-52.80000000000007" y="-14.5" />
+      <point x="964.0634810405644" y="357.0" />
+      <point x="788.5104497354495" y="357.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.Character" target="com.company.Item">
+      <point x="24.666666666666742" y="-14.5" />
+      <point x="1515.0977366255142" y="297.0" />
+      <point x="1484.0104497354496" y="297.0" />
+      <point x="1484.0104497354496" y="178.0" />
+      <point x="1954.2718437683711" y="178.0" />
+      <point x="-29.85714285714289" y="14.5" />
+    </edge>
+    <edge source="com.company.SpellCaster" target="com.company.Spell">
+      <point x="-46.875" y="-14.5" />
+      <point x="836.9935699588474" y="456.0" />
+      <point x="297.0104497354496" y="456.0" />
+      <point x="20.75" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.CharacterFactory" target="com.company.characters.Priest">
+      <point x="0.0" y="-14.5" />
+      <point x="1444.6875" y="614.0" />
+      <point x="1490.4310699588475" y="614.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.Spell" target="com.company.interfaces.iSpell">
+      <point x="-20.75" y="-14.5" />
+      <point x="255.51044973544958" y="357.0" />
+      <point x="286.0104497354496" y="357.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.LevelFactory" target="com.company.levels.Field">
+      <point x="-55.0" y="-14.5" />
+      <point x="2478.7604497354496" y="545.0" />
+      <point x="2141.7604497354496" y="545.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.ItemFactory" target="com.company.items.Potion">
+      <point x="54.6875" y="-14.5" />
+      <point x="1991.552083333333" y="357.0" />
+      <point x="2389.2331202233977" y="357.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.LevelFactory" target="com.company.levels.Mountain">
+      <point x="-33.0" y="-14.5" />
+      <point x="2500.7604497354496" y="535.0" />
+      <point x="2255.2604497354496" y="535.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.QuestFactory" target="com.company.Quest">
+      <point x="-26.399999999999977" y="-14.5" />
+      <point x="990.4634810405645" y="347.0" />
+      <point x="872.0104497354495" y="347.0" />
+      <point x="872.0104497354495" y="198.0" />
+      <point x="1168.2435699588473" y="198.0" />
+      <point x="-25.9375" y="14.5" />
+    </edge>
+    <edge source="com.company.interfaces.iLevel" target="com.company.Item">
+      <point x="0.0" y="-14.5" />
+      <point x="2500.2331202233977" y="168.0" />
+      <point x="2008.5575580540853" y="168.0" />
+      <point x="24.42857142857133" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.LevelFactory" target="com.company.levels.Dungeon">
+      <point x="-11.0" y="-14.5" />
+      <point x="2522.7604497354496" y="525.0" />
+      <point x="2464.3685699588473" y="525.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.Level" target="com.company.interfaces.iLevel">
+      <point x="0.0" y="-14.5" />
+      <point x="2486.316453556731" y="357.0" />
+      <point x="2500.2331202233977" y="357.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.QuestFactory" target="com.company.quests.saveHostage">
+      <point x="0.0" y="-14.5" />
+      <point x="1016.8634810405645" y="337.0" />
+      <point x="945.0104497354495" y="337.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.AttackFactory" target="com.company.attacks.DoubleStrike">
+      <point x="-52.125" y="-14.5" />
+      <point x="517.0560699588473" y="357.0" />
+      <point x="373.5104497354496" y="357.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.spells.Lightning" target="com.company.Spell">
+      <point x="0.0" y="-14.5" />
+      <point x="55.5" y="436.0" />
+      <point x="241.67711640211633" y="436.0" />
+      <point x="-34.583333333333314" y="14.5" />
+    </edge>
+    <edge source="com.company.items.Armor" target="com.company.Item">
+      <point x="0.0" y="-14.5" />
+      <point x="1536.0104497354496" y="188.0" />
+      <point x="1959.7004151969427" y="188.0" />
+      <point x="-24.42857142857133" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.CharacterFactory" target="com.company.characters.Dragonborn">
+      <point x="-68.57142857142844" y="-14.5" />
+      <point x="1376.1160714285716" y="644.0" />
+      <point x="821.8685699588474" y="644.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.CharacterFactory" target="com.company.characters.Wizard">
+      <point x="-45.71428571428555" y="-14.5" />
+      <point x="1398.9732142857142" y="634.0" />
+      <point x="945.8685699588474" y="634.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.characters.Berserker" target="com.company.Character">
+      <point x="0.0" y="-14.5" />
+      <point x="1788.8581202233977" y="446.0" />
+      <point x="1515.0977366255142" y="446.0" />
+      <point x="24.666666666666742" y="14.5" />
+    </edge>
+    <edge source="com.company.levels.Sky" target="com.company.Level">
+      <point x="0.0" y="-14.5" />
+      <point x="2045.7604497354496" y="426.0" />
+      <point x="2450.7450249853027" y="426.0" />
+      <point x="-35.57142857142844" y="14.5" />
+    </edge>
+    <edge source="com.company.levels.Field" target="com.company.Level">
+      <point x="0.0" y="-14.5" />
+      <point x="2141.7604497354496" y="436.0" />
+      <point x="2462.6021678424454" y="436.0" />
+      <point x="-23.71428571428578" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.QuestFactory" target="com.company.quests.killBeast">
+      <point x="52.799999999999955" y="-14.5" />
+      <point x="1069.6634810405644" y="357.0" />
+      <point x="1235.0104497354496" y="357.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.levels.Mountain" target="com.company.Level">
+      <point x="0.0" y="-14.5" />
+      <point x="2255.2604497354496" y="446.0" />
+      <point x="2474.4593106995885" y="446.0" />
+      <point x="-11.857142857142662" y="14.5" />
+    </edge>
+    <edge source="com.company.levels.Water" target="com.company.Level">
+      <point x="0.0" y="-14.5" />
+      <point x="2574.3685699588473" y="456.0" />
+      <point x="2498.173596413874" y="456.0" />
+      <point x="11.857142857142662" y="14.5" />
+    </edge>
+    <edge source="com.company.Spell" target="com.company.Attack">
+      <point x="20.75" y="-14.5" />
+      <point x="297.0104497354496" y="178.0" />
+      <point x="669.5560699588474" y="178.0" />
+      <point x="-39.375" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.ItemFactory" target="com.company.items.Weapon">
+      <point x="-39.0625" y="-14.5" />
+      <point x="1897.802083333333" y="337.0" />
+      <point x="1665.0104497354496" y="337.0" />
+      <point x="22.5" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.SpellFactory" target="com.company.spells.Ice">
+      <point x="-16.5" y="-14.5" />
+      <point x="171.5" y="545.0" />
+      <point x="165.5" y="545.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.AttackFactory" target="com.company.attacks.HammerStrike">
+      <point x="-17.375" y="-14.5" />
+      <point x="551.8060699588473" y="357.0" />
+      <point x="525.5104497354496" y="357.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.factories.CharacterFactory">
+      <point x="-28.5" y="-14.5" />
+      <point x="1902.864583333333" y="723.0" />
+      <point x="1444.6875" y="723.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.LevelFactory" target="com.company.levels.Castle">
+      <point x="33.0" y="-14.5" />
+      <point x="2566.7604497354496" y="535.0" />
+      <point x="2680.8685699588473" y="535.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.items.Weapon" target="com.company.Item">
+      <point x="0.0" y="-14.5" />
+      <point x="1642.5104497354496" y="198.0" />
+      <point x="1965.1289866255142" y="198.0" />
+      <point x="-19.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.ItemFactory" target="com.company.items.Book">
+      <point x="39.0625" y="-14.5" />
+      <point x="1975.927083333333" y="347.0" />
+      <point x="2286.233120223398" y="347.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.Character">
+      <point x="-9.5" y="-14.5" />
+      <point x="1921.864583333333" y="713.0" />
+      <point x="1865.8581202233977" y="713.0" />
+      <point x="1865.8581202233977" y="426.0" />
+      <point x="1539.764403292181" y="426.0" />
+      <point x="49.333333333333485" y="14.5" />
+    </edge>
+    <edge source="com.company.Level" target="com.company.Item">
+      <point x="27.666666666666515" y="-14.5" />
+      <point x="2513.9831202233977" y="357.0" />
+      <point x="2555.7331202233977" y="357.0" />
+      <point x="2555.7331202233977" y="158.0" />
+      <point x="2013.986129482657" y="158.0" />
+      <point x="29.85714285714289" y="14.5" />
+    </edge>
+    <edge source="com.company.levels.Castle" target="com.company.Level">
+      <point x="0.0" y="-14.5" />
+      <point x="2680.8685699588473" y="446.0" />
+      <point x="2510.030739271017" y="446.0" />
+      <point x="23.71428571428578" y="14.5" />
+    </edge>
+    <edge source="com.company.items.Food" target="com.company.Item">
+      <point x="0.0" y="-14.5" />
+      <point x="1990.114583333333" y="218.0" />
+      <point x="1981.4147009112285" y="218.0" />
+      <point x="-2.7142857142857792" y="14.5" />
+    </edge>
+    <edge source="com.company.items.Potion" target="com.company.Item">
+      <point x="0.0" y="-14.5" />
+      <point x="2389.2331202233977" y="188.0" />
+      <point x="1997.7004151969427" y="188.0" />
+      <point x="13.571428571428669" y="14.5" />
+    </edge>
+    <edge source="com.company.interfaces.iCharacter" target="com.company.Quest">
+      <point x="29.5" y="-14.5" />
+      <point x="1411.0104497354496" y="148.0" />
+      <point x="1209.7435699588473" y="148.0" />
+      <point x="15.5625" y="14.5" />
+    </edge>
+    <edge source="com.company.quests.recoverRelic" target="com.company.Quest">
+      <point x="0.0" y="-14.5" />
+      <point x="1093.5104497354496" y="218.0" />
+      <point x="1188.9935699588473" y="218.0" />
+      <point x="-5.1875" y="14.5" />
+    </edge>
+    <edge source="com.company.Character" target="com.company.Quest">
+      <point x="0.0" y="-14.5" />
+      <point x="1490.4310699588475" y="317.0" />
+      <point x="1462.0104497354496" y="317.0" />
+      <point x="1462.0104497354496" y="128.0" />
+      <point x="1230.4935699588473" y="128.0" />
+      <point x="36.3125" y="14.5" />
+    </edge>
+    <edge source="com.company.quests.deliverMessage" target="com.company.Quest">
+      <point x="0.0" y="-14.5" />
+      <point x="788.5104497354495" y="188.0" />
+      <point x="1157.8685699588473" y="188.0" />
+      <point x="-36.3125" y="14.5" />
+    </edge>
+    <edge source="com.company.attacks.Slice" target="com.company.Attack">
+      <point x="0.0" y="-14.5" />
+      <point x="653.0104497354495" y="208.0" />
+      <point x="703.3060699588474" y="208.0" />
+      <point x="-5.625" y="14.5" />
+    </edge>
+    <edge source="com.company.SpellCaster" target="com.company.Character">
+      <point x="46.875" y="-14.5" />
+      <point x="930.7435699588474" y="436.0" />
+      <point x="1453.4310699588475" y="436.0" />
+      <point x="-37.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.CharacterFactory" target="com.company.Character">
+      <point x="68.57142857142867" y="-14.5" />
+      <point x="1513.2589285714284" y="644.0" />
+      <point x="1854.8581202233977" y="644.0" />
+      <point x="1854.8581202233977" y="436.0" />
+      <point x="1527.4310699588475" y="436.0" />
+      <point x="37.0" y="14.5" />
+    </edge>
+    <edge source="com.company.quests.saveHostage" target="com.company.Quest">
+      <point x="0.0" y="-14.5" />
+      <point x="945.0104497354495" y="208.0" />
+      <point x="1178.6185699588473" y="208.0" />
+      <point x="-15.5625" y="14.5" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.Item">
+      <point x="28.5" y="-14.5" />
+      <point x="1959.864583333333" y="723.0" />
+      <point x="2752.6185699588473" y="723.0" />
+      <point x="2752.6185699588473" y="148.0" />
+      <point x="2019.4147009112285" y="148.0" />
+      <point x="35.28571428571422" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.ItemFactory" target="com.company.items.Armor">
+      <point x="-54.6875" y="-14.5" />
+      <point x="1882.177083333333" y="347.0" />
+      <point x="1556.7604497354496" y="347.0" />
+      <point x="20.75" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.LevelFactory" target="com.company.Level">
+      <point x="55.000000000000114" y="-14.5" />
+      <point x="2588.7604497354496" y="545.0" />
+      <point x="2736.3685699588473" y="545.0" />
+      <point x="2736.3685699588473" y="436.0" />
+      <point x="2521.8878821281596" y="436.0" />
+      <point x="35.57142857142844" y="14.5" />
+    </edge>
+    <edge source="com.company.characters.Dragonborn" target="com.company.SpellCaster">
+      <point x="0.0" y="-14.5" />
+      <point x="821.8685699588474" y="545.0" />
+      <point x="852.6185699588474" y="545.0" />
+      <point x="-31.25" y="14.5" />
+    </edge>
+    <edge source="com.company.items.Jewelry" target="com.company.Item">
+      <point x="0.0" y="-14.5" />
+      <point x="1883.614583333333" y="218.0" />
+      <point x="1975.986129482657" y="218.0" />
+      <point x="-8.14285714285711" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.AttackFactory" target="com.company.Attack">
+      <point x="52.125" y="-14.5" />
+      <point x="621.3060699588473" y="357.0" />
+      <point x="705.0104497354495" y="357.0" />
+      <point x="705.0104497354495" y="218.0" />
+      <point x="714.5560699588474" y="218.0" />
+      <point x="5.625" y="14.5" />
+    </edge>
+    <edge source="com.company.characters.Priest" target="com.company.Character">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.ItemFactory" target="com.company.Item">
+      <point x="-23.4375" y="-14.5" />
+      <point x="1913.427083333333" y="327.0" />
+      <point x="1698.0104497354496" y="327.0" />
+      <point x="1698.0104497354496" y="208.0" />
+      <point x="1970.5575580540853" y="208.0" />
+      <point x="-13.571428571428669" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.SpellFactory" target="com.company.spells.Lightning">
+      <point x="-49.5" y="-14.5" />
+      <point x="138.5" y="545.0" />
+      <point x="55.5" y="545.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.items.Book" target="com.company.Item">
+      <point x="0.0" y="-14.5" />
+      <point x="2286.233120223398" y="198.0" />
+      <point x="1992.2718437683711" y="198.0" />
+      <point x="8.14285714285711" y="14.5" />
+    </edge>
+    <edge source="com.company.characters.Warrior" target="com.company.Character">
+      <point x="0.0" y="-14.5" />
+      <point x="1664.8581202233977" y="456.0" />
+      <point x="1502.7644032921808" y="456.0" />
+      <point x="12.333333333333258" y="14.5" />
+    </edge>
+    <edge source="com.company.spells.Fire" target="com.company.Spell">
+      <point x="0.0" y="-14.5" />
+      <point x="285.125" y="456.0" />
+      <point x="283.1771164021163" y="456.0" />
+      <point x="6.916666666666686" y="14.5" />
+    </edge>
+    <edge source="com.company.characters.Wizard" target="com.company.SpellCaster">
+      <point x="0.0" y="-14.5" />
+      <point x="945.8685699588474" y="545.0" />
+      <point x="915.1185699588474" y="545.0" />
+      <point x="31.25" y="14.5" />
+    </edge>
+    <edge source="com.company.factories.SpellFactory" target="com.company.spells.Fire">
+      <point x="49.5" y="-14.5" />
+      <point x="237.5" y="545.0" />
+      <point x="285.125" y="545.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.company.Character" target="com.company.interfaces.iCharacter">
+      <point x="-24.666666666666742" y="-14.5" />
+      <point x="1465.7644032921808" y="337.0" />
+      <point x="1381.5104497354496" y="337.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="1590.0" y="727.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
