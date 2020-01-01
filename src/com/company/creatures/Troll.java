@@ -1,4 +1,6 @@
 package com.company.creatures;
 
-public class Troll {
+import com.company.Creature;
+
+public class Troll extends Creature {
 }

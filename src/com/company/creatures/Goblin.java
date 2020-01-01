@@ -1,4 +1,6 @@
 package com.company.creatures;
 
-public class Goblin {
+import com.company.Creature;
+
+public class Goblin extends Creature {
 }
