@@ -8,6 +8,11 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class Character implements iCharacter {
+    /*
+        Maybe this class should extend Creature?
+        Every Character is a creature, but not every creature
+        is a character.
+     */
     private String name;
     private int x, y, health = 100, level = 1, xp = 0, energy = 100;
     private boolean isJumping = false, isWalking = false, isSleeping = false, isRunning = false, isAlive = true;

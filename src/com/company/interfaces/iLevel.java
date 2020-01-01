@@ -1,5 +1,6 @@
 package com.company.interfaces;
 
+import com.company.Character;
 import com.company.Creature;
 import com.company.Item;
 
@@ -17,4 +18,6 @@ public interface iLevel {
     void setSize(int size);
     void addCreature(Creature c);
     ArrayList<Creature> getCreatures();
+    void addCharacter(Character c);
+    ArrayList<Character> getCharacters();
 }

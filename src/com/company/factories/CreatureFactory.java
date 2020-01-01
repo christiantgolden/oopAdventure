@@ -12,6 +12,7 @@ public class CreatureFactory {
         switch (type){
             case "Dragon":
                 c = new Dragon();
+                c.canFly = true;
                 break;
             case "Giant":
                 c = new Giant();
