@@ -1,11 +1,11 @@
 package com.company.factories;
 
-import com.company.Level;
-import com.company.levels.*;
+import com.company.Location;
+import com.company.locations.*;
 
-public class LevelFactory {
-    public Level spawnlLevel(String type){
-        Level l = null;
+public class LocationFactory {
+    public Location spawnlLevel(String type){
+        Location l = null;
         switch (type){
             case "Field":
                 l = new Field();

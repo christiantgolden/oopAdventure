@@ -9,7 +9,7 @@ public class Quest implements iQuest {
     private int level, earnableXP;
     private boolean isFinished;
 
-    private ArrayList<Level> levels = new ArrayList<>();
+    private ArrayList<Location> locations = new ArrayList<>();
     private ArrayList<Character> characters = new ArrayList<>();//people involved in quest
     private ArrayList<Quest> subQuests = new ArrayList<>();
 

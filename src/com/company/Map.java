@@ -6,6 +6,6 @@ public class Map {
     /*
         Will consist of levels, (creatures, characters, and quests via levels).
      */
-    private ArrayList<Level> levels = new ArrayList<>();
+    private ArrayList<Location> locations = new ArrayList<>();
 
 }

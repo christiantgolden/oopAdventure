@@ -5,7 +5,7 @@ import com.company.Character;
 
 import java.util.ArrayList;
 
-public interface iLevel {
+public interface iLocation {
     void setLevel(int level); //level of difficulty
     int getLevel(); //level of difficulty
     void addItem(Item i);

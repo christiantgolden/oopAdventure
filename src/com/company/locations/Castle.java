@@ -1,11 +1,11 @@
-package com.company.levels;
+package com.company.locations;
 
-import com.company.Level;
+import com.company.Location;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Castle extends Level {
+public class Castle extends Location {
     private HashMap<Integer,ArrayList<Room>> blueprint = new HashMap<>();
 
     public void addFloor(){

@@ -11,7 +11,7 @@ public class Weather implements iWeather {
         add timestamp for start time
      */
     private int intensity;
-    private ArrayList<Level> areas = new ArrayList<>();
+    private ArrayList<Location> areas = new ArrayList<>();
 
     @Override
     public void setDuration(int duration) {
@@ -48,7 +48,7 @@ public class Weather implements iWeather {
         /*
 
          */
-        for(Level l: this.areas){
+        for(Location l: this.areas){
             l.addWeatherEvent(newWeatherEvent);
         }
     }
@@ -59,12 +59,12 @@ public class Weather implements iWeather {
     }
 
     @Override
-    public ArrayList<Level> getAreas() {
+    public ArrayList<Location> getAreas() {
         return this.areas;
     }
 
     @Override
-    public void addLocation(Level l) {
+    public void addLocation(Location l) {
         this.areas.add(l);
     }
 }

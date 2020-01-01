@@ -1,6 +1,6 @@
 package com.company.interfaces;
 
-import com.company.Level;
+import com.company.Location;
 import com.company.Weather;
 
 import java.util.ArrayList;
@@ -14,6 +14,6 @@ public interface iWeather {
     int getRemainingTime();
     void interrupt(Weather newWeatherEvent);
     void move(String direction);
-    ArrayList<Level> getAreas();
-    void addLocation(Level l);
+    ArrayList<Location> getAreas();
+    void addLocation(Location l);
 }

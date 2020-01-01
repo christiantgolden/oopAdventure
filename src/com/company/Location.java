@@ -1,10 +1,10 @@
 package com.company;
 
-import com.company.interfaces.iLevel;
+import com.company.interfaces.iLocation;
 
 import java.util.ArrayList;
 
-public class Level implements iLevel {
+public class Location implements iLocation {
     private String type; //Castle, Dungeon, Field, Mountain, etc.
     private int level; //level of difficulty
     private int size; //square feet
