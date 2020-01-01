@@ -1,8 +1,7 @@
 package com.company.interfaces;
 
+import com.company.*;
 import com.company.Character;
-import com.company.Creature;
-import com.company.Item;
 
 import java.util.ArrayList;
 
@@ -20,4 +19,8 @@ public interface iLevel {
     ArrayList<Creature> getCreatures();
     void addCharacter(Character c);
     ArrayList<Character> getCharacters();
+    void addFurniture(Furniture f);
+    ArrayList<Furniture> getFurniture();
+    void addWeatherEvent(Weather w);
+    Weather getWeather();
 }

@@ -11,6 +11,8 @@ public class Level implements iLevel {
     private ArrayList<Item> items = new ArrayList<>();
     private ArrayList<Creature> creatures = new ArrayList<>();
     private ArrayList<Character> characters = new ArrayList<>();
+    private ArrayList<Furniture> furniture = new ArrayList<>();
+    private Weather weather;
 
     @Override
     public void setLevel(int level) {//level of difficulty
@@ -80,5 +82,25 @@ public class Level implements iLevel {
     @Override
     public ArrayList<Character> getCharacters() {
         return this.characters;
+    }
+
+    @Override
+    public void addFurniture(Furniture f) {
+        this.furniture.add(f);
+    }
+
+    @Override
+    public ArrayList<Furniture> getFurniture() {
+        return this.furniture;
+    }
+
+    @Override
+    public void addWeatherEvent(Weather w) {
+        this.weather = w;
+    }
+
+    @Override
+    public Weather getWeather() {
+        return this.weather;
     }
 }
