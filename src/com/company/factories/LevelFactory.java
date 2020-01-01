@@ -4,7 +4,7 @@ import com.company.Level;
 import com.company.levels.*;
 
 public class LevelFactory {
-    public Level spawlLevel(String type){
+    public Level spawnlLevel(String type){
         Level l = null;
         switch (type){
             case "Field":

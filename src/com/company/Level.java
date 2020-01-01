@@ -5,12 +5,14 @@ import com.company.interfaces.iLevel;
 import java.util.ArrayList;
 
 public class Level implements iLevel {
-    private String type;
+    private String type; //Castle, Dungeon, Field, Mountain, etc.
     private int level; //level of difficulty
+    private int size; //square feet
     private ArrayList<Item> items = new ArrayList<>();
+    private ArrayList<Creature> creatures = new ArrayList<>();
 
     @Override
-    public void setLevel(int level) {
+    public void setLevel(int level) {//level of difficulty
         this.level = level;
     }
 
@@ -47,5 +49,25 @@ public class Level implements iLevel {
     @Override
     public String getType() {
         return this.type;
+    }
+
+    @Override
+    public int getSize() {
+        return this.size;
+    }
+
+    @Override
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    @Override
+    public void addCreature(Creature c) {
+        this.creatures.add(c);
+    }
+
+    @Override
+    public ArrayList<Creature> getCreatures() {
+        return this.creatures;
     }
 }
