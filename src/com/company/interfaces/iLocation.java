@@ -2,6 +2,7 @@ package com.company.interfaces;
 
 import com.company.*;
 import com.company.Character;
+import com.sun.org.apache.xalan.internal.xsltc.util.IntegerArray;
 
 import java.util.ArrayList;
 
@@ -23,4 +24,7 @@ public interface iLocation {
     ArrayList<Furniture> getFurniture();
     void addWeatherEvent(Weather w);
     Weather getWeather();
+    void generateBoundary();
+    ArrayList<IntegerArray> getBoundary();
+    void printBoundary();
 }

@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.factories.CharacterFactory;
 import com.company.factories.ItemFactory;
+import com.company.locations.Castle;
 
 public class Main {
 
@@ -9,6 +10,8 @@ public class Main {
         /*
             TODO:
                 1. World Generator
+                    ~ a location is defined by a list of coordinates corresponding
+                        to boundary.
                     ~ generates map consisting of locations
                         locations randomly generated/patched together
                         locations are populated with NPCs, creatures, buildings, weather
@@ -47,6 +50,11 @@ public class Main {
         System.out.println(burger.getName() + " x: " + burger.getX() + ", y: " + burger.getY());
         h.drop(bible);
         h.printInventory();
-        System.out.println(h.getInventory());
+        //System.out.println(h.getInventory());
+
+        Castle castle = new Castle();
+        castle.generateBoundary();
+
+        castle.printBoundary();
     }
 }
