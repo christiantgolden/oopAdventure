@@ -1,10 +1,7 @@
 package com.company.factories;
 
 import com.company.Creature;
-import com.company.creatures.Dragon;
-import com.company.creatures.Giant;
-import com.company.creatures.Goblin;
-import com.company.creatures.Troll;
+import com.company.creatures.*;
 
 public class CreatureFactory {
     public Creature spawnCreature(String type){
@@ -13,6 +10,7 @@ public class CreatureFactory {
             case "Dragon":
                 c = new Dragon();
                 c.canFly = true;
+                c.isRidable = true;
                 break;
             case "Giant":
                 c = new Giant();
@@ -22,6 +20,10 @@ public class CreatureFactory {
                 break;
             case "Troll":
                 c = new Troll();
+                break;
+            case "Horse":
+                c = new Horse();
+                c.isRidable = true;
                 break;
         }
         return c;

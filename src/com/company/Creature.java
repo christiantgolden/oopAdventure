@@ -7,6 +7,7 @@ public class Creature implements iCreature {
     private int health;
     private boolean isAlive = true;
     public boolean canFly = false;
+    public boolean isRidable = false;
 
     @Override
     public int getLevel() {
