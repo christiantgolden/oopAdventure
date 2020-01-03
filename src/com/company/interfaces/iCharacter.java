@@ -41,4 +41,5 @@ public interface iCharacter {
     Boolean isSleeping();
     Boolean isAlive();
     void die();
+    void encounterQuest(Quest q);//allows Character to choose whether or not to add quest.
 }

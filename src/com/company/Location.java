@@ -14,14 +14,12 @@ public class Location extends JFrame implements iLocation {
     private String type; //Castle, Dungeon, Field, Mountain, etc.
     private int level; //level of difficulty
     private int size; //square feet
-    //private ArrayList<IntegerArray> boundary = new ArrayList<>();//list of points
     private ArrayList<Item> items = new ArrayList<>();
     private ArrayList<Creature> creatures = new ArrayList<>();
     private ArrayList<Character> characters = new ArrayList<>();
     private ArrayList<Furniture> furniture = new ArrayList<>();
     private Weather weather;
     private HashMap<String, int[]> boundary = new HashMap<>();
-    // yRanges is a Hashmap of x coords and their corresponding max/min y
     private int[] topLeft = new int[2];
     private int[] topRight = new int[2];
     private int[] bottomRight = new int[2];

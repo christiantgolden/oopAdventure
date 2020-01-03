@@ -6,6 +6,7 @@ import com.company.items.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Character implements iCharacter {
     /*
@@ -234,6 +235,16 @@ public class Character implements iCharacter {
     @Override
     public void die() {
         this.isAlive = false;
+    }
+
+    @Override
+    public void encounterQuest(Quest q) {
+        System.out.println("Accept quest (" + q.getName() + "): ");
+        Scanner s = new Scanner(System.in);
+        String choice = s.next();
+        if(choice.toLowerCase() == "yes"){
+            this.addQuest(q);
+        }
     }
 
     public void attack(Attack a, Character target) {
