@@ -1,8 +1,7 @@
 package com.company;
 
-import com.company.factories.CharacterFactory;
-import com.company.factories.ItemFactory;
-import com.company.locations.Castle;
+import com.company.factories.*;
+import com.company.locations.*;
 
 public class Main {
 
@@ -22,7 +21,7 @@ public class Main {
                 4. Game Start
          */
         Item burger = new ItemFactory().spawnItem("Food", "Burger");
-        Character h = new CharacterFactory().spawnHero("Wizard", "Gandalf");
+        Character h = new CharacterFactory().spawnCharacter("Wizard", "Gandalf");
         h.pickUp(burger);
         System.out.println("Name: " + h.getName() + " Location: " + h.getX() + "," + h.getY());
         System.out.println("moving right");
@@ -50,12 +49,8 @@ public class Main {
         System.out.println(burger.getName() + " x: " + burger.getX() + ", y: " + burger.getY());
         h.drop(bible);
         h.printInventory();
-        //System.out.println(h.getInventory());
 
-        Castle castle = new Castle();
-        castle.generateBoundary();
-
-        /*castle.printBoundary();
-        castle.drawBoundary();*/
+        //Castle castle = new Castle();
+        //castle.generateBoundary();
     }
 }

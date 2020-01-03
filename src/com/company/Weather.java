@@ -2,25 +2,27 @@ package com.company;
 
 import com.company.interfaces.iWeather;
 
+import java.time.Duration;
+import java.time.OffsetTime;
 import java.util.ArrayList;
 
 public class Weather implements iWeather {
-    private int duration;
+    private Duration duration;
     private int remainingTime;
-    /*
-        add timestamp for start time
-     */
+    private OffsetTime startTime;
+    private OffsetTime endTime;
+    public boolean isDisaster = false;
     private int intensity;
     private ArrayList<Location> areas = new ArrayList<>();
 
     @Override
-    public void setDuration(int duration) {
+    public void setDuration(Duration duration) {
         this.duration = duration;
     }
 
     @Override
     public int getDuration() {
-        return this.duration;
+        return this.duration.toMillisPart();
     }
 
     @Override
@@ -45,9 +47,6 @@ public class Weather implements iWeather {
 
     @Override
     public void interrupt(Weather newWeatherEvent) {
-        /*
-
-         */
         for(Location l: this.areas){
             l.addWeatherEvent(newWeatherEvent);
         }
@@ -66,5 +65,25 @@ public class Weather implements iWeather {
     @Override
     public void addLocation(Location l) {
         this.areas.add(l);
+    }
+
+    @Override
+    public void setStartTime() {
+        this.startTime = OffsetTime.now();
+    }
+
+    @Override
+    public OffsetTime getStartTime() {
+        return this.startTime;
+    }
+
+    @Override
+    public void setEndTime(Duration duration) {
+        this.endTime = this.startTime.plus(duration);
+    }
+
+    @Override
+    public OffsetTime getEndTime() {
+        return this.endTime;
     }
 }

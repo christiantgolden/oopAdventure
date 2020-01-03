@@ -120,25 +120,17 @@ public class Location extends JFrame implements iLocation {
     @Override
     public void generateBoundary() {
         //TODO
-        int[] corners = new int[8];
-        Random rand = new Random();
-        for(int i = 0; i < 8; i++){
-            corners[i] = Math.abs(rand.nextInt(100));
-        }
-        Arrays.sort(corners);
+        /*
+            generate several random triangles at random locations,
+            interconnected with lines drawn between points.
 
-        this.topLeft[0] = corners[0];
-        this.topLeft[1] = corners[2];
-        this.topRight[0] = corners[5];
-        this.topRight[1] = corners[3];
-        this.bottomRight[0] = corners[4];
-        this.bottomRight[1] = corners[6];
-        this.bottomLeft[0] = corners[1];
-        this.bottomLeft[1] = corners[7];
-        this.boundary.put("Top Left",this.topLeft);
-        this.boundary.put("Top Right",this.topRight);
-        this.boundary.put("Bottom Right",this.bottomRight);
-        this.boundary.put("Bottom Left",this.bottomLeft);
+            1. Generate triangle of random sizes/angles at a random point
+            2. draw line from last drawn triangle point.
+                ~ line should not cross any other lines
+                    ? if x within prev line xs, make sure y doesn't exceed min of prev ys.
+                    ? if y within prev line ys, make sure x doesn't exceed min of prev xs.
+            3. repeat at end of new line after shifting the starting angle
+         */
         class Draw extends JComponent{
             Random rand = new Random();
             int FirstLinex1 = Math.abs(rand.nextInt(300));

@@ -41,6 +41,9 @@ public class ItemFactory {
                 i.isReadable = true;
                 i.generateLocation();
                 break;
+            case "Gold":
+                i = new Gold(name);
+                i.generateLocation();
         }
         return i;
     }

@@ -4,7 +4,7 @@ import com.company.Character;
 import com.company.characters.*;
 
 public class CharacterFactory {
-    public Character spawnHero(String race, String name){
+    public Character spawnCharacter(String race, String name){
         Character c = null;
         switch (race){
             case "Wizard":
@@ -29,6 +29,10 @@ public class CharacterFactory {
                 break;
             case "Berserker":
                 c = new Berserker(name);
+                c.generateLocation();
+                break;
+            case "Elf":
+                c = new Elf(name);
                 c.generateLocation();
                 break;
         }
