@@ -55,6 +55,7 @@ public class Main {
         Castle castle = new Castle();
         castle.generateBoundary();
 
-        castle.printBoundary();
+        /*castle.printBoundary();
+        castle.drawBoundary();*/
     }
 }

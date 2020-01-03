@@ -5,6 +5,7 @@ import com.company.Character;
 import com.sun.org.apache.xalan.internal.xsltc.util.IntegerArray;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public interface iLocation {
     void setLevel(int level); //level of difficulty
@@ -12,10 +13,10 @@ public interface iLocation {
     void addItem(Item i);
     ArrayList<Item> getItems();
     Item removeItem(Item i);
-    void setType(String type);
-    String getType();
-    int getSize();
-    void setSize(int size);
+    void setLocationType(String type);
+    String getLocationType();
+    int getLocationSize();
+    void setLocationSize(int size);
     void addCreature(Creature c);
     ArrayList<Creature> getCreatures();
     void addCharacter(Character c);
@@ -25,6 +26,7 @@ public interface iLocation {
     void addWeatherEvent(Weather w);
     Weather getWeather();
     void generateBoundary();
-    ArrayList<IntegerArray> getBoundary();
+    HashMap<String, int[]> getBoundary();
     void printBoundary();
+    void drawBoundary();
 }
