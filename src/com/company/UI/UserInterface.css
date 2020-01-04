@@ -1,5 +1,6 @@
 .root{
-    -fx-background-image: url("resources/background.jpg");
+    /*-fx-background-image: url("resources/background.jpg");*/
+    -fx-background-color: black;
 }
 .label{
     -fx-font-size: 12px;

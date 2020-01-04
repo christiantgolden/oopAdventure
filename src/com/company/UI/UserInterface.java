@@ -26,11 +26,10 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-
-import java.nio.file.attribute.UserPrincipalNotFoundException;
-
 /*
     RESOURCES:
+        Art: https://opengameart.org/
+        Icons: https://game-icons.net/
         Forms: https://docs.oracle.com/javafx/2/get_started/form.htm
         Charts: https://docs.oracle.com/javafx/2/charts/chart-overview.htm#CJAHHJCB
         3D Graphics: https://docs.oracle.com/javase/8/javafx/graphics-tutorial/javafx-3d-graphics.htm#JFXGR256
@@ -59,6 +58,7 @@ public class UserInterface extends Application {
         grid.setHgap(10);
         grid.setVgap(10);
         grid.setPadding(new Insets(25,25,25,25));
+        grid.setId("grid");
 
         final Text actiontarget = new Text();
         grid.add(actiontarget, 1, 5);
@@ -83,7 +83,7 @@ public class UserInterface extends Application {
         drawShapes(gc);
         grid.add(canvas, 1, 3, 3, 3);*/
 
-        Image img = new Image("com/company/UI/resources/sprites/player/base/centaur_brown_female.png",
+        Image img = new Image("com/company/UI/resources/wizard-face.png",
                 100, 0, true, true);
         ImageView iv = new ImageView();
         iv.setImage(img);
