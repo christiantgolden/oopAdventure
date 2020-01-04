@@ -1,5 +1,5 @@
 .root{
-    -fx-background-image: url("background.jpg");
+    -fx-background-image: url("resources/background.jpg");
 }
 .label{
     -fx-font-size: 12px;
@@ -14,7 +14,7 @@
     -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.7), 6, 0.0, 0, 2);
 }
 #actiontarget{
-    -fx-fill: FIREBRICK;
+    -fx-fill: white;
     -fx-font-weight: bold;
     -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 1);
 }
@@ -29,5 +29,6 @@
     -fx-background-color: linear-gradient(#2a5058, #61a2b1);
 }
 #combobox{
-    -fx-background-color: black;
+    -fx-background-color: #444444;
+    -fx-text-fill: white;
 }

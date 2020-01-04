@@ -14,6 +14,8 @@ import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
@@ -23,6 +25,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+
 
 import java.nio.file.attribute.UserPrincipalNotFoundException;
 
@@ -44,6 +47,11 @@ public class UserInterface extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        int inputRow = 6;
+        int titleRow = 0;
+        int canvasRow = 2;//spans 3 rows (2, 3, and 4)
+        //leave rows 1 and 5 as gaps
+
         primaryStage.setTitle("JavaFX Welcome");
 
         GridPane grid = new GridPane();
@@ -53,7 +61,7 @@ public class UserInterface extends Application {
         grid.setPadding(new Insets(25,25,25,25));
 
         final Text actiontarget = new Text();
-        grid.add(actiontarget, 1, 6);
+        grid.add(actiontarget, 1, 5);
 
         Scene scene = new Scene(grid, 500, 500);
         scene.getStylesheets().add(UserInterface.class.getResource("UserInterface.css").toExternalForm());
@@ -61,18 +69,25 @@ public class UserInterface extends Application {
 
         Text scenetitle = new Text("Welcome");
         scenetitle.setId("welcome-text");
-        grid.add(scenetitle, 0, 0, 2, 1);
+        grid.add(scenetitle, 0, titleRow, 2, 1);
 
         Label userName = new Label("Character Name: ");
-        grid.add(userName, 0, 1);
+        grid.add(userName, 0, inputRow);
 
         TextField userTextField = new TextField();
-        grid.add(userTextField, 1, 1, 1, 1);
+        userTextField.setMaxWidth(150);
+        grid.add(userTextField, 1, inputRow);
 
-        Canvas canvas = new Canvas(300, 250);
+        /*Canvas canvas = new Canvas(300, 250);
         GraphicsContext gc = canvas.getGraphicsContext2D();
         drawShapes(gc);
-        grid.add(canvas, 1, 3);
+        grid.add(canvas, 1, 3, 3, 3);*/
+
+        Image img = new Image("com/company/UI/resources/sprites/player/base/centaur_brown_female.png",
+                100, 0, true, true);
+        ImageView iv = new ImageView();
+        iv.setImage(img);
+        grid.add(iv, 1, 4);
 
 
         //grid.setGridLinesVisible(true);
@@ -83,14 +98,18 @@ public class UserInterface extends Application {
         );
         final ComboBox comboBox = new ComboBox(options);
         comboBox.setValue("Race");
+        comboBox.setMinWidth(100);
+        comboBox.setMaxWidth(100);
         comboBox.setId("combobox");
-        grid.add(comboBox,2, 1);
+        grid.add(comboBox,2, inputRow);
 
-        Button btn = new Button("Sign in");
+        Button btn = new Button("Create");
+        btn.setMinWidth(100);
+        btn.setMaxWidth(100);
         HBox hbBtn = new HBox(10);
         hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
         hbBtn.getChildren().add(btn);
-        grid.add(hbBtn, 1, 4);
+        grid.add(hbBtn, 3, inputRow);
 
         btn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
