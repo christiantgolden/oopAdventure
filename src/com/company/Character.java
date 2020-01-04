@@ -14,7 +14,7 @@ public class Character implements iCharacter {
         Every Character is a creature, but not every creature
         is a character.
      */
-    private String name;
+    private String name, race;
     private int x, y, health = 100, level = 1, xp = 0, energy = 100;
     private boolean isJumping = false, isWalking = false, isSleeping = false, isRunning = false, isAlive = true;
     private ArrayList<Item> inventory = new ArrayList<>();
@@ -62,6 +62,16 @@ public class Character implements iCharacter {
     @Override
     public String getName() {
         return this.name;
+    }
+
+    @Override
+    public void setRace(String race) {
+        this.race = race;
+    }
+
+    @Override
+    public String getRace() {
+        return this.race;
     }
 
     @Override
@@ -242,7 +252,7 @@ public class Character implements iCharacter {
         System.out.println("Accept quest (" + q.getName() + "): ");
         Scanner s = new Scanner(System.in);
         String choice = s.next();
-        if(choice.toLowerCase() == "yes"){
+        if(choice.toLowerCase().equals("yes")){
             this.addQuest(q);
         }
     }

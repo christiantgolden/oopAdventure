@@ -8,6 +8,8 @@ import java.util.ArrayList;
 public interface iCharacter {
     void setName(String name);
     String getName();
+    void setRace(String race);
+    String getRace();
     void setX(int x);
     int getX();
     void setY(int y);
