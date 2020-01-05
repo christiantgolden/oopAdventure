@@ -31,6 +31,14 @@ import javafx.stage.Stage;
 
 public class UserInterface extends Application {
 
+    private Image heroImage = new Image("com/company/scenes/resources/Template.png", 64, 0, true, true);
+    private Image helper1Image = new Image("com/company/scenes/resources/Template.png", 64, 0, true, true);
+    private Image helper2Image = new Image("com/company/scenes/resources/Template.png", 64, 0, true, true);
+    private Image helper3Image = new Image("com/company/scenes/resources/Template.png", 64, 0, true, true);
+    private Image enemy1Image = new Image("com/company/scenes/resources/Template.png", 64, 0, true, true);
+    private Image enemy2Image = new Image("com/company/scenes/resources/Template.png", 64, 0, true, true);
+    private Image enemy3Image = new Image("com/company/scenes/resources/Template.png", 64, 0, true, true);
+    private Image enemy4Image = new Image("com/company/scenes/resources/Template.png", 64, 0, true, true);
     public static void main(String[] args) {
         launch(args);
     }
@@ -45,10 +53,11 @@ public class UserInterface extends Application {
         primaryStage.setTitle("JavaFX Welcome");
 
         GridPane grid = new GridPane();
-        grid.setAlignment(Pos.CENTER);
+        //grid.setAlignment(Pos.CENTER);
+        grid.setAlignment(Pos.TOP_CENTER);
         grid.setHgap(10);
         grid.setVgap(10);
-        grid.setPadding(new Insets(25,25,25,25));
+        //grid.setPadding(new Insets(25,25,25,25));
         grid.setId("grid");
 
         final Text actiontarget = new Text();
@@ -62,7 +71,25 @@ public class UserInterface extends Application {
         userTextField.setMaxWidth(150);
         userTextField.setMinWidth(150);
         userTextField.setId("userText");
+        Tooltip t = new Tooltip("Enter Name");
+        userTextField.setTooltip(t);
         grid.add(userTextField, 0, 0);
+
+        ImageView heroIV = new ImageView();
+        heroIV.setImage(heroImage);
+        grid.add(heroIV, 0, 1);
+
+        ImageView helper1IV = new ImageView();
+        helper1IV.setImage(helper1Image);
+        grid.add(helper1IV, 0, 2);
+
+        ImageView helper2IV = new ImageView();
+        helper2IV.setImage(helper2Image);
+        grid.add(helper2IV, 0, 3);
+
+        ImageView helper3IV = new ImageView();
+        helper3IV.setImage(helper3Image);
+        grid.add(helper3IV, 0, 4);
 
         ObservableList<String> options = FXCollections.observableArrayList(
                 "Wizard","Bard","Berserker","Dragonborn","Elf",
