@@ -46,6 +46,17 @@ public class CharacterFactory {
                 c = new Bard(name);
                 c.setRace(race);
                 c.generateLocation();
+                break;
+            case "Samurai":
+                c = new Samurai(name);
+                c.setRace(race);
+                c.generateLocation();
+                break;
+            case "Hacker":
+                c = new Hacker(name);
+                c.setRace(race);
+                c.generateLocation();
+                break;
         }
         return c;
     }

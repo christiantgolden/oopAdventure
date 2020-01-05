@@ -9,20 +9,11 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.ArcType;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -61,55 +52,34 @@ public class UserInterface extends Application {
         grid.setId("grid");
 
         final Text actiontarget = new Text();
-        grid.add(actiontarget, 1, 5);
+        grid.add(actiontarget, 0, 7, 3, 1);
 
         Scene scene = new Scene(grid, 500, 500);
         scene.getStylesheets().add(UserInterface.class.getResource("UserInterface.css").toExternalForm());
         primaryStage.setScene(scene);
 
-        Text scenetitle = new Text("Welcome");
-        scenetitle.setId("welcome-text");
-        grid.add(scenetitle, 0, titleRow, 2, 1);
-
-        Label userName = new Label("Character Name: ");
-        grid.add(userName, 0, inputRow);
-
         TextField userTextField = new TextField();
         userTextField.setMaxWidth(150);
-        grid.add(userTextField, 1, inputRow);
-
-        /*Canvas canvas = new Canvas(300, 250);
-        GraphicsContext gc = canvas.getGraphicsContext2D();
-        drawShapes(gc);
-        grid.add(canvas, 1, 3, 3, 3);*/
-
-        Image img = new Image("com/company/UI/resources/wizard-face.png",
-                100, 0, true, true);
-        ImageView iv = new ImageView();
-        iv.setImage(img);
-        grid.add(iv, 1, 4);
-
-
-        //grid.setGridLinesVisible(true);
+        userTextField.setMinWidth(150);
+        //userTextField.setText("Name");
+        userTextField.setId("userText");
+        grid.add(userTextField, 0, 0);
 
         ObservableList<String> options = FXCollections.observableArrayList(
                 "Wizard","Bard","Berserker","Dragonborn","Elf",
-                "Monk","Priest","Warrior"
+                "Monk","Priest","Warrior","Samurai","Hacker"
         );
         final ComboBox comboBox = new ComboBox(options);
         comboBox.setValue("Race");
-        comboBox.setMinWidth(100);
-        comboBox.setMaxWidth(100);
+        comboBox.setMinWidth(150);
+        comboBox.setMaxWidth(150);
         comboBox.setId("combobox");
-        grid.add(comboBox,2, inputRow);
+        grid.add(comboBox,1, 0);
 
         Button btn = new Button("Create");
-        btn.setMinWidth(100);
-        btn.setMaxWidth(100);
-        HBox hbBtn = new HBox(10);
-        hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
-        hbBtn.getChildren().add(btn);
-        grid.add(hbBtn, 3, inputRow);
+        btn.setMinWidth(150);
+        btn.setMaxWidth(150);
+        grid.add(btn, 2, 0);
 
         btn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -118,31 +88,14 @@ public class UserInterface extends Application {
                 Character hero = new CharacterFactory().spawnCharacter(comboBox.getValue().toString(), userTextField.getText());
                 actiontarget.setText("You created: " + hero.getName() + ", a " + hero.getRace() + " at (" +
                         hero.getX() + "," + hero.getY() + ")");
+                Image img = new Image("com/company/UI/resources/" + hero.getRace() + ".png",
+                        150, 0, true, true);
+                ImageView iv = new ImageView();
+                iv.setImage(img);
+                grid.add(iv, 1, 1);
             }
         });
 
         primaryStage.show();
-    }
-    private void drawShapes(GraphicsContext gc){
-        gc.setFill(Color.GREEN);
-        gc.setStroke(Color.BLUE);
-        gc.setLineWidth(5);
-        gc.strokeLine(40, 10, 10, 40);
-        gc.fillOval(10, 60, 30, 30);
-        gc.strokeOval(60, 60, 30, 30);
-        gc.fillRoundRect(110, 60, 30, 30, 10, 10);
-        gc.strokeRoundRect(160, 60, 30, 30, 10, 10);
-        gc.fillArc(10, 110, 30, 30, 45, 240, ArcType.OPEN);
-        gc.fillArc(60, 110, 30, 30, 45, 240, ArcType.CHORD);
-        gc.fillArc(110, 110, 30, 30, 45, 240, ArcType.ROUND);
-        gc.strokeArc(10, 160, 30, 30, 45, 240, ArcType.OPEN);
-        gc.strokeArc(60, 160, 30, 30, 45, 240, ArcType.CHORD);
-        gc.strokeArc(110, 160, 30, 30, 45, 240, ArcType.ROUND);
-        gc.fillPolygon(new double[]{10, 40, 10, 40},
-                new double[]{210, 210, 240, 240}, 4);
-        gc.strokePolygon(new double[]{60, 90, 60, 90},
-                new double[]{210, 210, 240, 240}, 4);
-        gc.strokePolyline(new double[]{110, 140, 110, 140},
-                new double[]{210, 210, 240, 240}, 4);
     }
 }
