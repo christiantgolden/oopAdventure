@@ -73,7 +73,7 @@ public class UserInterface extends Application {
         userTextField.setId("userText");
         Tooltip t = new Tooltip("Enter Name");
         userTextField.setTooltip(t);
-        grid.add(userTextField, 0, 0);
+        grid.add(userTextField, 0, 0, 2, 1);
 
         ImageView heroIV = new ImageView();
         heroIV.setImage(heroImage);
@@ -91,6 +91,15 @@ public class UserInterface extends Application {
         helper3IV.setImage(helper3Image);
         grid.add(helper3IV, 0, 4);
 
+        TextField gameTextField = new TextField();
+        int gtFieldSize = 300;
+        gameTextField.setMinHeight(gtFieldSize);
+        gameTextField.setMaxHeight(gtFieldSize);
+        gameTextField.setMinWidth(gtFieldSize);
+        gameTextField.setMaxWidth(gtFieldSize);
+        gameTextField.setId("gameField");
+        grid.add(gameTextField, 1, 1, 4, 4);
+
         ObservableList<String> options = FXCollections.observableArrayList(
                 "Wizard","Bard","Berserker","Dragonborn","Elf",
                 "Monk","Priest","Warrior","Samurai","Hacker","Robot"
@@ -100,12 +109,12 @@ public class UserInterface extends Application {
         comboBox.setMinWidth(150);
         comboBox.setMaxWidth(150);
         comboBox.setId("combobox");
-        grid.add(comboBox,1, 0);
+        grid.add(comboBox,2, 0, 2, 1);
 
         Button btn = new Button("Create");
         btn.setMinWidth(150);
         btn.setMaxWidth(150);
-        grid.add(btn, 2, 0);
+        grid.add(btn, 4, 0, 2, 1);
 
         btn.setOnAction(new EventHandler<ActionEvent>() {
             @Override

@@ -40,3 +40,7 @@
     -fx-border-color: white;
     -fx-text-fill: white;
 }
+#gameField{
+    -fx-background-color: black;
+    -fx-border-color: white;
+}
