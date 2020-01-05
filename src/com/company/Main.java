@@ -2,12 +2,12 @@ package com.company;
 
 import com.company.factories.*;
 import com.company.locations.*;
+import com.company.scenes.UserInterface;
 
 public class Main {
 
     public static void main(String[] args) {
-        Character hero = new CharacterFactory().spawnCharacter("Wizard", "Greg");
-
+        UserInterface ui = new UserInterface();
                 /*
             TODO:
                 1. World Generator

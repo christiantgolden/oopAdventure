@@ -57,6 +57,11 @@ public class CharacterFactory {
                 c.setRace(race);
                 c.generateLocation();
                 break;
+            case "Robot":
+                c = new Robot(name);
+                c.setRace(race);
+                c.generateLocation();
+                break;
         }
         return c;
     }
