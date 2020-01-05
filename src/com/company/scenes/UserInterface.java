@@ -7,10 +7,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
@@ -122,12 +124,13 @@ public class UserInterface extends Application {
                 actiontarget.setId("actiontarget");
                 Character hero = new CharacterFactory().spawnCharacter(comboBox.getValue().toString(), userTextField.getText());
                 actiontarget.setText("You created: " + hero.getName() + ", a " + hero.getRace() + " at (" +
-                        hero.getX() + "," + hero.getY() + ")");
+                        hero.getX() + "," + hero.getY() + ") WOW!");
                 Image img = new Image("com/company/scenes/resources/" + hero.getRace() + ".png",
-                        150, 0, true, true);
+                        64, 0, true, true);
                 ImageView iv = new ImageView();
                 iv.setImage(img);
-                grid.add(iv, 1, 1);
+                heroIV.setImage(img);
+                //grid.add(iv, 1, 1);
             }
         });
 
