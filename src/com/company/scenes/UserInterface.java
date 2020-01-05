@@ -9,10 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Tooltip;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
@@ -93,13 +90,14 @@ public class UserInterface extends Application {
         helper3IV.setImage(helper3Image);
         grid.add(helper3IV, 0, 4);
 
-        TextField gameTextField = new TextField();
+        TextArea gameTextField = new TextArea();
         int gtFieldSize = 300;
         gameTextField.setMinHeight(gtFieldSize);
         gameTextField.setMaxHeight(gtFieldSize);
         gameTextField.setMinWidth(gtFieldSize);
         gameTextField.setMaxWidth(gtFieldSize);
         gameTextField.setId("gameField");
+        gameTextField.setWrapText(true);
         grid.add(gameTextField, 1, 1, 4, 4);
 
         ObservableList<String> options = FXCollections.observableArrayList(

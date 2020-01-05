@@ -31,6 +31,9 @@
 .button:hover{
     -fx-background-color: linear-gradient(#444444, #000000);
 }
+.combo-box .content{
+    -fx-text-fill: white;
+}
 #combobox{
     -fx-background-color: black;
     -fx-border-color: white;
@@ -43,4 +46,11 @@
 #gameField{
     -fx-background-color: black;
     -fx-border-color: white;
+}
+.text-area{
+    -fx-text-fill: white;
+}
+.text-area .content{
+    -fx-background-color: black;
+    -fx-text-fill: white;
 }
